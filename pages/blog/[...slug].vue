@@ -15,15 +15,15 @@
         </div>
       </div>
     </div>
-    <div class="w-screen h-10 flex justify-center items-center" style="background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.05),rgba(0,0,0,0.08),rgba(0,0,0,0.03),rgba(0,0,0,0.03),rgba(0,0,0,0.08),rgba(0,0,0,0.05),rgba(0,0,0,0.09),rgba(0,0,0,0.1),rgba(0,0,0,0.03),transparent,rgba(0,0,0,0.07),rgba(0,0,0,0.03),rgba(0,0,0,0.01) 4px),linear-gradient(135deg, rgb(239, 145, 97),rgb(153, 53, 18)); overflow: hidden;">
+    <div v-if=doc.date class="w-screen h-10 flex justify-center items-center" style="background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.05),rgba(0,0,0,0.08),rgba(0,0,0,0.03),rgba(0,0,0,0.03),rgba(0,0,0,0.08),rgba(0,0,0,0.05),rgba(0,0,0,0.09),rgba(0,0,0,0.1),rgba(0,0,0,0.03),transparent,rgba(0,0,0,0.07),rgba(0,0,0,0.03),rgba(0,0,0,0.01) 4px),linear-gradient(135deg, rgb(239, 145, 97),rgb(153, 53, 18)); overflow: hidden;">
       <div class="text-xl flex items-center text-muted-background font-mono justify-center" style="white-space: nowrap; overflow: hidden;">
         <div class="wrapper">
           <div class="marquee">
             <p>
-              - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023
+              - {{ Array(20).fill((new Date(doc.date)).toLocaleDateString()).join(' - ') }}
             </p>
             <p>
-              - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023 - 09/18/2023
+              - {{ Array(20).fill((new Date(doc.date)).toLocaleDateString()).join(' - ') }}
             </p>
           </div>
         </div>
