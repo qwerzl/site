@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-10">
+    <div class="flex justify-center mt-4">
       <div class="max-w-6xl mx-4">
         <ContentRenderer :value="doc" />
       </div>
