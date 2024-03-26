@@ -38,12 +38,14 @@ format your content smartly:
 
 Here is a numbered list:
 
-1. first item
-2. second item
-3. third item
+1. First item
+2. Second item
+3. Third item
 
 Note again how the actual text starts at 3 columns in (3 characters
 from the left side).
+
+Test formula: $$a^b=b^c$$
 
 Here's a code block sample:
 
@@ -62,14 +64,14 @@ define foobar() {
 (which makes copying & pasting easier). You can optionally mark the
 delimited block for syntax highlighting with any code pretty CSS framework.
 
-~~~python
+```python [file.js]{4-6,7} meta-info=val
 import time
 # Quick, count to ten!
 for i in range(10):
     # (but not *too* quick)
     time.sleep(0.5)
     print i
-~~~
+```
 
 
 ### Heading 3 ###
