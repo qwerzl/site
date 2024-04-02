@@ -1,9 +1,10 @@
 <script setup lang="ts">
-
+import { ScrollArea } from '@/components/ui/scroll-area'
 </script>
 
 <template>
-  <Nav route="blog" />
+  <ScrollArea class="h-screen">
+  <Nav route="blog" class="bg-background z-40 w-screen" />
   <ContentDoc v-slot="{ doc }">
     <div class="w-screen h-56 border-muted-background border-b-2 flex items-center bg-foreground text-background 2xl:h-72">
       <div class="text-6xl lg:text-7xl xl:text-8xl font-bold ml-6 xl:ml-20 flex-col">
@@ -29,12 +30,15 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center mt-4">
-      <div class="max-w-6xl mx-4">
-        <ContentRenderer :value="doc" />
+    <div class="flex justify-center mt-4 w-screen">
+      <div class="max-w-6xl px-4">
+        <ContentRenderer :value="doc"/>
       </div>
     </div>
   </ContentDoc>
+
+  </ScrollArea>
+
 </template>
 
 <style>
