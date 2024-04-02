@@ -37,6 +37,22 @@ import { ScrollArea } from '@/components/ui/scroll-area'
     </div>
   </ContentDoc>
 
+  <div class="w-screen mt-10">
+    <footer class="rounded-lg shadow border-t">
+      <div class="w-full mx-auto max-w-screen-xl py-8 px-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-muted-foreground sm:text-center">© 2024 Tom Tang. All Rights Reserved.
+    </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-muted-foreground md:mt-0">
+          <li>
+            <NuxtLink to="https://github.com/qwerzl/site" class="hover:underline me-4 md:me-6">GitHub</NuxtLink>
+          </li>
+          <li>
+            <a href="mailto:me@qwerzl.me" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
   </ScrollArea>
 
 </template>
