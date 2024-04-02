@@ -29,12 +29,12 @@ const props = defineProps({
         B
       </div>
     </NuxtLink>
-    <NuxtLink to="/portfolio" class="pl-0 lg:pl-5 border-l-2 h-full border-muted-background flex items-center w-1/3" :class="{'bg-foreground text-background': route === 'portfolio'}" >
+    <NuxtLink to="/about" class="pl-0 lg:pl-5 border-l-2 h-full border-muted-background flex items-center w-1/3" :class="{'bg-foreground text-background': route === 'about'}" >
       <div class="hidden sm:block w-full text-center lg:text-left">
-        Portfolio
+        About
       </div>
       <div class="block sm:hidden w-full text-center lg:text-left">
-        P
+        A
       </div>
     </NuxtLink>
   </div>
