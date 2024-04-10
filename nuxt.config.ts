@@ -15,9 +15,11 @@ export default defineNuxtConfig({
       remarkPlugins: [
         'remark-math'
       ],
-      rehypePlugins: [
-        'rehype-katex'
-      ]
+      rehypePlugins: {
+        'rehype-katex': {
+          output: 'html'
+        },
+      }
     },
     highlight: {
       theme: 'github-dark',
