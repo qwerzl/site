@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'shadcn-nuxt', 'nuxt-svgo', "@tresjs/nuxt", 'nuxt-icon', '@nuxt/fonts'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'shadcn-nuxt', 'nuxt-svgo', "@tresjs/nuxt", 'nuxt-icon', '@nuxt/fonts', '@vueuse/nuxt'],
   app: {
     head: {
       link: [{
