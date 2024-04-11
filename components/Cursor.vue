@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const {x, y} = useMouse({touch: false})
 const cursor = ref<HTMLElement>()
+const focused = useWindowFocus()
+const isLeft = usePageLeave()
 
 watch([x, y], () => {
   if (cursor.value) {
@@ -11,10 +13,13 @@ watch([x, y], () => {
 </script>
 
 <template>
-  <div
-      ref="cursor"
-      class='follower'>
-  </div>
+  <Transition>
+    <div
+        v-if="focused && !isLeft"
+        ref="cursor"
+        class='follower'>
+    </div>
+  </Transition>
 </template>
 
 <style scoped>
@@ -25,10 +30,20 @@ watch([x, y], () => {
   background-color: #FFF;
   mix-blend-mode: difference;
   border-radius: 50px;
-  transition-duration: 1000ms;
+  transition-duration: 2000ms;
   transition-timing-function: ease-out;
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 </style>
