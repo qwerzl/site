@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<Nav />
+  <Nav />
   <div class="w-screen h-56 border-muted-background border-b-2 flex items-center bg-foreground text-background 2xl:h-72">
     <div class="text-6xl lg:text-7xl xl:text-8xl font-bold ml-6 xl:ml-20 flex items-center">
       About

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {Collapsible, CollapsibleContent, CollapsibleTrigger} from "~/components/ui/collapsible";
 import ProjectItem from "~/components/ProjectItem.vue";
-import {defaultProjectList} from '~/content/projectList'
-import {extendedProjectList} from "~/content/projectList";
+import {defaultProjectList} from '~/data/projectList'
+import {extendedProjectList} from "~/data/projectList";
 
 const isOpen = ref(false)
 const isShow = ref(false)
